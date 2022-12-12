@@ -1,6 +1,6 @@
-// $('.btn').on('click', function(e) {
-// 	$('.nav').toggleClass('is-active');
-// })
+$('.btn').on('click', function(e) {
+	$('.nav').toggleClass('is-active');
+})
 $('.header-burger').on('click', function(e) {
   $('.header-wrapper').toggleClass('is-active');
 })
@@ -35,7 +35,9 @@ $('.clients-sliders').slick({
  $(".click-tabs" ).tabs();
 
  $('.video-button').click(function(event) {
+  console.log($(".modal"));
     event.preventDefault();
+
     $(".modal").modal({
       fadeDuration: 100,
       showClose: false
